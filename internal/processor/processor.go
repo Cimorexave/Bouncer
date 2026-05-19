@@ -5,8 +5,11 @@ import (
 	"math/rand"
 	"time"
 
-	. "bouncer/models"
+	. "Bouncer/internal/models"
 )
+
+type processor struct {
+}
 
 func ProcessRequest(req Request) {
 	fmt.Printf("Processing request ID: %s from IP: %s\n", req.ID, req.IPAddress)
